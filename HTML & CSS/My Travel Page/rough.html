@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /* Selects the second element of div siblings */
+      div:nth-of-type(1) {
+        background: rgb(0, 255, 191);
+      }
+
+      div p:nth-of-type(1) {
+        background: rgb(81, 255, 0);
+        font-weight: 500;
+        font-size: x-large;
+        font-family: cursive;
+        padding-left: 660px;
+      }
+
+      /* Selects the second li element in a list */
+
+      .bill li:nth-of-type(2) {
+        background: lightgreen;
+        list-style: none;
+      }
+
+      .token li:nth-of-type(2) {
+        background: rgb(238, 144, 222);
+      }
+
+      .token p:nth-of-type(2) {
+        background: rgb(144, 158, 238);
+        font-size: x-large;
+        margin: 0;
+        border: 5px dashed red;
+        text-align: center;
+      }
+
+      .bill li a:nth-of-type(1) {
+        text-decoration: none;
+        color: rgb(64, 165, 165);
+      }
+
+      .bill li:nth-of-type(1) {
+        list-style: none;
+      }
+
+      /* Selects every third element among any group of siblings */
+      /* :nth-of-type(3) {
+  background: yellow;
+} */
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>This is some text 1.</p>
+      <p>This is some text 2.</p>
+      <p>This is some text 3.</p>
+    </div>
+
+    <ul class="bill">
+      <li><a href="https://www.google.com/">First list item</a></li>
+      <li>Second list item</li>
+      <li>Third list item</li>
+      <li>Fourth list item</li>
+      <li>Fifth list item</li>
+    </ul>
+
+    <ul class="token">
+      <li>First list item</li>
+      <li>Second list item</li>
+      <li>Third list item</li>
+      <li>Fourth list item</li>
+      <li>Fifth list item</li>
+      <p>This is the first paragraph.</p>
+      <p>This is the second paragraph.</p>
+    </ul>
+  </body>
+</html>

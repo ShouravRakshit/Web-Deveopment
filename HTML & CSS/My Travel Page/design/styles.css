@@ -1,0 +1,12 @@
+.hero{
+    height: 850px;
+    background-image: url(/images/places/ocean.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+.hero-content{
+    background-color: rgb(105, 134, 57);
+    
+}
