@@ -1,0 +1,43 @@
+body {
+  background: linear-gradient(30deg, rgb(77, 77, 77), rgb(58, 58, 58));
+}
+header {
+  position: static;
+}
+#logo a {
+  color: aquamarine;
+}
+
+#logo a:hover {
+  color: rgb(66, 228, 174);
+}
+
+.links li a {
+  color: aquamarine;
+}
+
+.links li a:hover {
+  color: rgb(66, 228, 174);
+}
+
+main li img {
+  height: 300px;
+  width: 300px;
+}
+
+main ul {
+  width: 850px;
+  margin: 0 auto;
+  padding-left: 0;
+}
+
+main li {
+  display: flex;
+  background-color: aliceblue;
+  box-shadow: 1px 1px 4px rgba(0,0,0,.2);
+  border-radius: 8px;
+}
+
+.picture{
+    padding: 0 20px;
+}

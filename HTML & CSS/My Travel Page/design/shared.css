@@ -3,7 +3,7 @@ body {
   margin: 0;
 }
 
-#logo a {
+#logo a{
   color: rgb(213, 213, 75);
   font-size: xx-large;
   padding: 10px;
@@ -67,3 +67,13 @@ ul {
 } */
 
 
+footer{
+  background: linear-gradient(70deg, rgb(24,24,24), rgb(25,29,29));
+  display: flex;
+  justify-content:center;
+}
+
+footer li a img{
+  height: 80px;
+  margin: 30px 50px;
+}
