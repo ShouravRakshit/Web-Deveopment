@@ -55,7 +55,7 @@
   position: relative;
   top: 30px;
   margin: 0px 40px 40px 4px;
-  left: -5px;
+  left: 35px;
   top: 40px;
 }
 
@@ -101,7 +101,6 @@
 }
 
 .highlight{
-
     background: linear-gradient(45deg, rgb(237,255, 253), rgb(10, 134, 126));
 }
 

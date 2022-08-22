@@ -3,22 +3,22 @@ body {
   margin: 0;
 }
 
-#logo a{
+#logo a {
   color: rgb(213, 213, 75);
   font-size: xx-large;
   padding: 10px;
-  text-decoration: none;      /* This line deletes the underline from the link. */
-  text-transform: uppercase;  /* This line transforms the all the text to the uppercase. */
+  text-decoration: none; /* This line deletes the underline from the link. */
+  text-transform: uppercase; /* This line transforms the all the text to the uppercase. */
   text-shadow: 1px 1px 2px rgb(0, 0, 0);
 }
 
-header{
+header {
   display: flex;
-  flex-direction: row;    /* The direction of this flex is row wise. This has no wrap.*/
-  justify-content:space-between;
+  flex-direction: row; /* The direction of this flex is row wise. This has no wrap.*/
+  justify-content: space-between;
   align-items: center;
   padding: 15px 50px;
-  position: fixed;            /* This position lets you have the header go with you as you go down the page. */
+  position: fixed; /* This position lets you have the header go with you as you go down the page. */
   width: 100%;
   box-sizing: border-box;
 }
@@ -29,24 +29,26 @@ ul {
   text-decoration: none;
 }
 
-.links li{
+.links li {
   margin-left: 20px;
 }
 
-.links a{
+.links a {
   text-decoration: none;
   color: rgba(255, 251, 0, 0.87);
   font-size: 20px;
   font-weight: 600;
   padding: 15px;
-  text-shadow: 1px 1px 2px rgba(0,0,0,.2);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
-.links a:hover{
+.links a:hover {
   color: rgb(255, 251, 0);
 }
 
-
+#logo a:hover {
+  color: rgb(255, 251, 0);
+}
 
 /* .bill li:nth-of-type(1) {
   list-style: none;
@@ -66,14 +68,13 @@ ul {
   color: rgb(17, 0, 255);
 } */
 
-
-footer{
-  background: linear-gradient(70deg, rgb(24,24,24), rgb(25,29,29));
+footer {
+  background: linear-gradient(70deg, rgb(24, 24, 24), rgb(25, 29, 29));
   display: flex;
-  justify-content:center;
+  justify-content: center;
 }
 
-footer li a img{
+footer li a img {
   height: 80px;
   margin: 30px 50px;
 }
