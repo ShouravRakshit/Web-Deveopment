@@ -1,0 +1,95 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+main{
+  background-color: rgba(12, 211, 211, 0.459);
+  width: 1000px;
+  height: 750px;
+  margin: 0 auto;
+}
+
+li{
+  list-style: none;
+}
+
+img{
+  width: 200px;
+  height: 200px;
+  padding-top: 20px;
+  padding-left: 20px;
+  border-radius: 100px;
+  float: left;
+}
+
+#left-section{
+  float: left;
+  padding-top: 50px;
+  padding-left: 30px;
+}
+
+#right-section{
+  float: right;
+  padding-top: 55px;
+  padding-right: 50px;
+} 
+
+.personal-info{
+  clear: both;
+}
+
+.personal-info #left-section{
+  padding-top: 50px;
+  padding-left: 10px;
+}
+
+.clear-div{
+  clear: both;
+}
+
+.personal-info #right-section{
+  padding-right:200px;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.line {
+  margin: 20px auto;
+  width: 950px;
+  border-top: 5px solid rgb(0, 0, 0);
+  
+}
+
+.work-experience #left-section{
+  padding-top: 50px;
+  padding-left: 10px;
+  float: left;
+}
+
+.work-experience #right-section{
+  float: right;
+  padding-right: 0px;
+  padding-top: 50px;
+  width: 430px;
+}
+
+footer ul{
+  background-color: black;
+  display: flex;
+}
+
+footer ul li{
+  margin: 20px auto;
+}
+
+footer li a{
+  text-decoration: none;
+  color: azure;
+  font-size: 20px;
+}
+
+footer li a:hover{
+  color: tomato;
+  text-decoration: underline;
+}
