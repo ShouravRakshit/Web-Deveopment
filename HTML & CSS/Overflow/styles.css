@@ -1,0 +1,27 @@
+.dummy-text{
+    color: aqua;
+    width: 400px;
+    height: 200px;
+    background-color: rgb(208, 255, 127);
+    overflow: scroll;
+}
+
+
+
+.facebook {
+    visibility: hidden;
+    width: 220px;
+    height: 15px;
+    padding: 10px;
+    background-color: tomato;
+    border-radius: 10px;
+}
+
+
+.link:hover .facebook{
+    visibility: visible;
+}
+
+.experiment{
+    margin-bottom: 120px;
+}

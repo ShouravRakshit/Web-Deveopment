@@ -1,0 +1,25 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    
+    background-color: aqua;
+
+}
+
+main {
+    background-color: aliceblue;
+    width: 500px;
+    height: 100px;
+    margin: 0 auto;
+    
+}
+
+main ul li {
+    list-style: none;
+    float: left;
+    padding: 20px;
+    color: tomato;
+}

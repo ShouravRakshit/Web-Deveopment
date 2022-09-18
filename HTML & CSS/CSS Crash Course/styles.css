@@ -1,0 +1,57 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: rgba(0, 208, 255, 0.545);
+}
+
+.text-container {
+  width: 70%;
+  margin: 0 auto;
+  background-color: rgb(39, 103, 160);
+  color: aliceblue;
+  line-height: 1.6rem;
+  padding: 20px;
+  border-radius: 10%;
+  border: 5px black solid;
+}
+
+.text-container h2 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 800;
+  text-align: center;
+}
+
+.link-container {
+  background-color: beige;
+  width: 70%;
+  margin: 20px auto;
+  border: 5px tomato solid;
+  padding: 25px;
+}
+
+.link-container li {
+  list-style: none;
+  float: left;
+  width: 20%;
+  height: 15px;
+}
+
+.link-container a {
+  text-decoration: none;
+  color: whitesmoke;
+  background-color: chocolate;
+  border-radius: 5px;
+}
+
+.link-container a:hover {
+  color: rgb(121, 185, 37);
+}
+.link-container h2 {
+  text-align: center;
+  color: rgb(165, 101, 22);
+  margin: 0px 0 30px 0;
+}
