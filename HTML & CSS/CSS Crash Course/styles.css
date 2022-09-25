@@ -7,6 +7,10 @@ body {
   background-color: rgba(0, 208, 255, 0.545);
 }
 
+.clr{
+  clear: both;
+}
+
 .text-container {
   width: 70%;
   margin: 0 auto;
@@ -54,4 +58,48 @@ body {
   text-align: center;
   color: rgb(165, 101, 22);
   margin: 0px 0 30px 0;
+}
+
+.form-group{
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 40px;
+  
+}
+
+.name-form, .email-form, .textarea-form, .button-form{
+  padding: 5px;
+  
+}
+
+.button button, a{
+  background-color: rgb(34, 28, 28);
+  border: none;
+  color: aliceblue;
+  padding: 5px;
+  margin-left: 5px;
+  width: 70px;
+}
+
+.button button:hover, a:hover{
+  background-color: tomato;
+}
+
+.block{
+  float: left;
+  width: 70%;
+ 
+  box-sizing: border-box;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.side-nav{
+  float: right;
+  width: 30%;
+  padding: 20px;
+  background-color: rgb(128, 128, 128);
+  color: rgba(245, 222, 179, 0.779);
+  box-sizing: border-box;
+  height: 200px;
 }
