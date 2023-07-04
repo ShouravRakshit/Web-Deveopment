@@ -20,9 +20,9 @@
           <h1>Today I Learned</h1>
         </div>
 
-        <button class="btn btn-large">Share a fact</button>
+        <button class="btn btn-large share-button">Share a fact</button>
       </header>
-      <form action="" class="fact-form">
+      <form action="" class="fact-form hidden">
         <input
           type="text"
           name=""
@@ -59,7 +59,7 @@
         </aside>
 
         <section>
-          <ul>
+          <ul class="facts-list">
             <li class="fact">
               <p>
                 React is being developed by Meta (formerly facebook)
@@ -91,9 +91,7 @@
                   >(Source)</a
                 >
               </p>
-              <span class="tag" style="background-color: #eab308"
-                >society</span
-              >
+              <span class="tag" style="background-color: #eab308">society</span>
               <div class="vote-buttons">
                 <button>👍 11</button>
                 <button>🤯 2</button>
@@ -104,5 +102,7 @@
         </section>
       </main>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
