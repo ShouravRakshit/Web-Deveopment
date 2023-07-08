@@ -1,0 +1,25 @@
+body{
+    background-color: rgba(46, 37, 37, 0.895);
+    
+}
+
+h1{
+    font-family: 'League Gothic', sans-serif;    
+    text-transform: uppercase;
+    color: aliceblue;
+    font-size: 80px;
+}
+img{
+    border: white 5px solid;
+    
+}
+
+.container{
+    text-align: center;
+    margin-top: 150px;
+}
+
+p{
+    color: aliceblue;
+}
+
