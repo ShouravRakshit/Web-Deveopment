@@ -1,1 +1,14 @@
-/* Write your code here: */
+
+h1, h2{
+    color: blueviolet;
+}
+
+/* Child Selector */
+.box > p{
+    color: firebrick;
+}
+/* Decendant Selector */
+.box li{
+    color: blue;
+}
+
