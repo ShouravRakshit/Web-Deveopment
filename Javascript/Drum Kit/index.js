@@ -1,6 +1,23 @@
 const element = document.querySelectorAll(".drum");
 console.log(element)
 
+
+var myKey;
+
+document.addEventListener("keypress", function(event) {
+  // This function will be called whenever a key is pressed
+  myKey = event.key;
+  // Now I can call any other functions or do any other tasks that rely on myKey here
+  
+  doSomethingWithMyKey(myKey);
+});
+
+function doSomethingWithMyKey(myKey) {
+  // You can use myKey here or perform any other operations with it
+  return myKey;
+}
+
+
 for (let index = 0; index < element.length; index++) {
     element[index].addEventListener("click", function(){
       
