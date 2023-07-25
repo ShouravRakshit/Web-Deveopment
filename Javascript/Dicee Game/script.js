@@ -4,11 +4,11 @@ function getRandomNumber() {
 
 function checkWinner(player1, player2) {
     if (player1 === player2) {
-        document.querySelector("h1").textContent = "Draw";
+        document.querySelector("h1").textContent = "Draw 🤣";
     } else if(player1 > player2){
-        document.querySelector("h1").textContent = "PLayer 1 Wins";
+        document.querySelector("h1").textContent = "PLayer 1 Wins 👌";
     }else{
-        document.querySelector("h1").textContent = "PLayer 2 Wins";
+        document.querySelector("h1").textContent = "PLayer 2 Wins ❌";
     }
 }
 
