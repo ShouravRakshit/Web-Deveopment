@@ -1,5 +1,6 @@
-$("#level-title").css("color", "red");
-
+let gamePattern =[];
+const buttonColours = ["red", "blue", "green", "yellow"];
+let userClickedPattern = [];
 
 function nextSequence() {
     
@@ -10,6 +11,7 @@ function nextSequence() {
 // The grey background stays for .1s seconds.
 function animatePress(currentColour){
     currentColour = "#" + currentColour;
+    console.log(currentColour);
     $(`${currentColour}`).addClass("pressed");
     setTimeout(function() {
         $(`${currentColour}`).removeClass("pressed");
@@ -20,23 +22,26 @@ function animatePress(currentColour){
 function playSound(randomChosenColour){
     $(`#${randomChosenColour}`).click(function(){
         
-    $(`#${randomChosenColour}`).fadeOut(100).fadeIn(100);
-    var audio = new Audio(`./sounds/${randomChosenColour}.mp3`);
-    audio.play();
+        $(`#${randomChosenColour}`).fadeOut(100).fadeIn(100);
+        var audio = new Audio(`./sounds/${randomChosenColour}.mp3`);
+        audio.play();
 });
 
 }
 
 
-let gamePattern =[];
-const buttonColours = ["red", "blue", "green", "yellow"];
-let userClickedPattern = [];
 let randomNumber = nextSequence();
 let randomChosenColour = buttonColours[randomNumber];
 gamePattern.push(randomChosenColour);
 
-// console.log(gamePattern);
-// console.log(randomChosenColour);
+function startGame() {
+    $(document).on("keypress", function() {
+        $("#level-title").text("Level 1");
+        animatePress(randomChosenColour);
+    
+    });
+}
+
 
 $(".btn").click(function(event){
     
@@ -44,8 +49,8 @@ $(".btn").click(function(event){
     animatePress(userChosenColour);
     userClickedPattern.push(userChosenColour);
     console.log(userClickedPattern);
-    // console.log(userChosenColour);
+    
 })
 
+startGame();
 playSound(randomChosenColour);
-
