@@ -3,12 +3,14 @@ const buttonColours = ["red", "blue", "green", "yellow"];
 let userClickedPattern = [];
 
 function nextSequence() {
-    
+
     return Math.floor(Math.random() * 4);
+    
 }
 
 // This function allows me to add the grey background color after I click the button.
 // The grey background stays for .1s seconds.
+
 function animatePress(currentColour){
     currentColour = "#" + currentColour;
     console.log(currentColour);
