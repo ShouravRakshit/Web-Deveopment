@@ -6,18 +6,25 @@
 
 
 import inquirer from 'inquirer';
+import qr from "qr-image";
 
-inquirer
-  .prompt([
-    /* Pass your questions in here */
-  ])
-  .then((answers) => {
-    // Use user feedback for... whatever!!
-  })
-  .catch((error) => {
-    if (error.isTtyError) {
-      // Prompt couldn't be rendered in the current environment
-    } else {
-      // Something else went wrong
-    }
-  });
+const questions = [
+    {
+        type: 'input',
+        name: 'given-name',
+        message: 'Enter your given name: '
+    },
+]
+
+// inquirer
+inquirer.prompt(questions)
+    .then(answers => {
+      console.log(answers);
+    })
+
+
+
+
+var qr_svg = qr.image('I love QR!', { type: 'png' });
+qr_svg.pipe(require('fs').createWriteStream('qr-img.png'));
+    
