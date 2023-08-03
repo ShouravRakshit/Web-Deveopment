@@ -7,24 +7,29 @@
 
 import inquirer from 'inquirer';
 import qr from "qr-image";
+import fs from "fs"
 
 const questions = [
     {
         type: 'input',
-        name: 'given-name',
-        message: 'Enter your given name: '
+        name: 'URL',
+        message: 'Type the URL: '
     },
 ]
 
 // inquirer
 inquirer.prompt(questions)
     .then(answers => {
-      console.log(answers);
+        console.log(answers);
+        const url = answers["URL"];
+
+        var qr_svg = qr.image(url);
+        qr_svg.pipe(fs.createWriteStream('qr-img.png'));
     })
 
 
 
 
-var qr_svg = qr.image('I love QR!', { type: 'png' });
-qr_svg.pipe(require('fs').createWriteStream('qr-img.png'));
+
+
     
