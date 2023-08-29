@@ -32,7 +32,7 @@ app.patch("/user/angela", (req, res) => {
 });
 
 app.delete("/user/angela", (req, res) => {
-  //Deleting
+  
   res.sendStatus(200);
 });
 
